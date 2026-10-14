@@ -59,3 +59,15 @@
 .mini-portrait-caption{font-size:4px;letter-spacing:.3px;line-height:1.6;margin-top:7px;color:#aaa;text-align:center}
 .mini-portrait-side{position:absolute;right:0;top:35%;writing-mode:vertical-rl;font-size:3px;letter-spacing:.5px;color:#888}
 .mini-resume{display:inline-block;font-size:5px;border:1px solid #555;padding:7px 5px;color:#ccc;margin-left:4px;margin-top:6px}
+
+/* Project links: title stretches across the card; action links stay independent. */
+.project-card{position:relative;isolation:isolate;transition:border-color .25s ease,box-shadow .25s ease}
+.project-card.is-interactive:hover{border-color:#777;box-shadow:0 10px 28px #0003}
+.project-title-link::after{content:'';position:absolute;inset:0;z-index:1}
+.project-title-link:focus-visible{outline:none}
+.project-title-link:focus-visible::after{outline:2px solid #ddd;outline-offset:5px}
+.project-card:focus-within{border-color:#aaa}
+.project-links{flex-wrap:wrap;gap:12px 22px}
+.project-links a{position:relative;z-index:2;align-items:center;min-height:44px;padding:8px 0;transition:color .2s ease,transform .2s ease}
+.project-links a:hover{color:#fff;transform:translateY(-2px)}
+.project-links a:focus-visible{outline:2px solid #ddd;outline-offset:4px}
