@@ -1,0 +1,4 @@
+import {projects,futureProjects} from '../data/projects';
+import ProjectCard from '../components/ProjectCard';
+import Reveal from '../components/Reveal';
+export default function Projects(){return <section id="projects" className="section project-section"><div className="container"><Reveal><div className="section-label">03 — SELECTED WORK</div><div className="section-heading"><h2>Learning by doing.<br/><span>Building with purpose.</span></h2><p>A closer look at my project work<br/>and the ideas I’m exploring next.</p></div></Reveal><h3 className="project-group-heading">Completed Projects</h3>{projects.map(p=><Reveal key={p.title}><ProjectCard project={p}/></Reveal>)}<div className="upcoming"><span className="eyebrow">PLANNED PROJECTS · NOT COMPLETED</span>{futureProjects.map((p,i)=><div key={p}><span>0{i+3}</span><h3>{p}</h3><span className="idea-tag">PLANNED</span></div>)}</div></div></section>}

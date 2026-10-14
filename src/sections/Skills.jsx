@@ -1,0 +1,4 @@
+import {skills,learning} from '../data/skills';
+import SkillCard from '../components/SkillCard';
+import Reveal from '../components/Reveal';
+export default function Skills(){return <section id="skills" className="section container"><Reveal><div className="section-label">02 — MY TOOLKIT</div><div className="section-heading"><h2>The tools behind<br/><span>the work.</span></h2><p>A growing foundation in development and data.<br/>Always learning. Always building.</p></div></Reveal><div className="skills-grid">{skills.map(s=><Reveal key={s[0]}><SkillCard skill={s}/></Reveal>)}</div><Reveal className="learning"><div><span className="eyebrow">WHAT’S NEXT</span><h3>On my learning roadmap</h3><p>Skills I plan to explore—not claimed as mastered.</p></div><div className="tags">{learning.map(s=><span key={s}>{s}</span>)}</div></Reveal></section>}

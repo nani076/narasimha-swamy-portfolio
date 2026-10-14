@@ -1,0 +1,6 @@
+import {ArrowUpRight,ArrowDown} from 'lucide-react';
+import HeroPortrait from '../components/HeroPortrait';
+import SocialLinks from '../components/SocialLinks';
+import ResumeButton from '../components/ResumeButton';
+import Reveal from '../components/Reveal';
+export default function Home(){return <section id="home" className="home container"><div className="hero-grid"><Reveal className="hero-copy"><div className="availability"><span/> OPEN TO OPPORTUNITIES</div><p className="hello">Hello, I’m</p><h1 className="hero-name">NARASIMHA SWAMY</h1><p className="role">Python Full Stack Developer <span>|</span> Data Analyst</p><p className="intro">I’m a passionate Python Full Stack Developer and aspiring Data Analyst with a strong foundation in Python, Django, SQL, and modern web technologies. I enjoy building practical applications, solving programming problems, and working with databases to create meaningful solutions.</p><div className="hero-actions"><a href="#projects" className="button primary">View Projects <ArrowUpRight size={17}/></a><ResumeButton/></div><a href="#contact" className="text-link">Contact me <ArrowUpRight size={15}/></a><SocialLinks/></Reveal><HeroPortrait/></div><div className="hero-bottom"><a href="#about"><ArrowDown size={16}/> SCROLL TO EXPLORE</a><span>CODE WITH PURPOSE. BUILD WITH CURIOSITY.</span><span>01 / 05</span></div></section>}

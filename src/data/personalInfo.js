@@ -1,0 +1,2 @@
+export const personalInfo = {name:'Narasimha Swamy', fullName:'Lakshmi Narasimhaswamy Chekka',role:'Python Full Stack Developer | Data Analyst',location:'Hyderabad, India',github:'https://github.com/nani076',linkedin:'https://www.linkedin.com/in/swamychekka07',email:import.meta.env.VITE_CONTACT_EMAIL?.trim() || 'swamychekka7@gmail.com',resume:import.meta.env.VITE_RESUME_AVAILABLE ? (import.meta.env.VITE_RESUME_PATH || 'resume/Narasimha_Swamy_Resume.pdf') : ''};
+export const asset = path => `${import.meta.env.BASE_URL}${path.replace(/^\//,'')}`;

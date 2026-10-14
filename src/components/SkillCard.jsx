@@ -1,0 +1,1 @@
+export default function SkillCard({skill:[number,title,items]}){return <article className="skill-card"><div className="card-top"><span>{number}</span><span>?</span></div><h3>{title}</h3><div className="tags">{items.map(item=><span key={item}>{item}</span>)}</div></article>}
